@@ -204,11 +204,66 @@ grid-template-rows: 40px 300px 1fr;
     grid-column: 2/5;
     grid-row: 2/6;
     background-color: #e7e5e4;
-}
-.announcements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 20px;
     
-    grid-row: 2/6;
 }
+
+.card{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.card>p{
+    padding: 10px;
+}
+
+.card>h3{
+    border-radius: 50px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+.card-icon-box{
+    width: 80px;
+    /* margin-top: 50px; */
+}
+
+
+
+
+
+.announcements{
+    background-color: #084c61;
+    border-radius: 20px;
+    grid-row: 2/6;
+    display: grid;
+    grid-row: 1fr 1fr;
+    margin: 10px;
+    color: white;
+}
+
+.announcements>div>div{
+    color: white;
+    background-color: #084c61;
+    /* border-radius: 20px; */
+}
+
+.box>div, .box>p, .box{
+    color: white;
+    background-color: #084c61;
+}
+
+.box>div{
+    font-size: larger;
+}
+
 
 img{
     height: 20px;
