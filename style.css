@@ -243,13 +243,21 @@ grid-template-rows: 40px 300px 1fr;
     background-color: #084c61;
     border-radius: 20px;
     grid-row: 2/6;
+    height: 100%;
     display: grid;
-    grid-row: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: 10px;
     color: white;
 }
 
-.announcements>div>div{
+#announce-list{
+    border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.announcements>div>div, .announcements>div{
+    border-radius: 20px;
     color: white;
     background-color: #084c61;
     /* border-radius: 20px; */
@@ -259,11 +267,29 @@ grid-template-rows: 40px 300px 1fr;
     color: white;
     background-color: #084c61;
 }
-
-.box>div{
-    font-size: larger;
+#announce-title{
+    font-size: x-large;
 }
 
+.box>.title{
+    font-size: large;
+    margin-bottom: 10px;
+}
+.box{
+    margin-top: 15px;
+}
+#trend{
+    background-color: #084c61;
+}
+
+.box>p{
+    padding: 10px;
+    font-size: small;
+}
+.line{
+    border: 1px solid white;
+    border-radius: 50px;
+}
 
 img{
     height: 20px;
